@@ -1,0 +1,41 @@
+#Syntax highlighting for Nim and NimScript
+
+syntax nim "\.nims?$"
+comment "#"
+
+#Keywords
+icolor brightmagenta "\<(if|elif|else|when|case|of|for|while|break|continue|do|import|from|export|include|as|block|discard|try|except|finally|raise|yield|return|defer|using|asm)\>"
+icolor brightmagenta "\<(and|or|not|xor|div|mod|in|notin|is|isnot|shl|shr|static)\>"
+icolor brightmagenta "\<(proc|func|method|iterator|converter|macro|template|let|var|const|bind|mixin|type|enum|object|tuple|concept|distinct|ref|ptr|cast|addr)\>"
+icolor brightcyan "\<nil\>"
+
+#Words reserved
+icolor brightmagenta "\<(out|namespace|interface|end)\>"
+
+#System-types
+icolor cyan "\<(u?int(8|16|32|64)?|float(32|64)?)\>"
+icolor cyan "\<c((s?char|string|stringArray|float|double|longdouble|size_t)|(u?(short|int|long|longlong)))\>"
+icolor cyan "\<(seq|string|char|set|bool|byte|array|openArray|void|pointer|varargs)\>"
+icolor cyan "\<(auto|typed|untyped|typedesc|lent|owned|sink|range)\>"
+
+#Literals
+icolor brightcyan "\<(true|false)\>"
+color brightgreen "\b'((i|u)(8|16|32|64)|f(32|64))\>"
+
+#Special
+icolor green "result"
+
+#Characters
+color brightblue "'([^\\']|\\([\\abceflnprtv'"]|[0-9]+)|\\x([0-9]|[a-f]){2}|\\u([0-9]|[a-f]){4}|\\u\{([0-9]|[a-f])+\})'"
+
+#Strings
+color brightcyan ""([^\\"]|\\([\\abceflnprtv'"]|[0-9]+)|\\x([0-9]|[a-f]){2}|\\u([0-9]|[a-f]){4}|\\u\{([0-9]|[a-f])+\})*""
+color brightcyan start=""""" end="""""
+
+#Pragma
+color blue start="\{\." end="\.?\}"
+
+#Comments
+color brightblue "#.*"
+color brightblue start="#\[" end="\]#"
+color brightblue start="##\[" end="\]##"
