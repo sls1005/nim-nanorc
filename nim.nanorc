@@ -20,10 +20,10 @@ icolor cyan "\<(auto|typed|untyped|typedesc|lent|owned|sink|range)\>"
 
 #Literals
 icolor brightcyan "\<(true|false)\>"
-color brightgreen "\b'((i|u)(8|16|32|64)|f(32|64))\>"
+color brightgreen "\>'((i|u)(8|16|32|64)|f(32|64))\>"
 
 #Special
-icolor green "result"
+icolor green "\<result\>"
 
 #Pragma
 color blue start="\{\." end="\.?\}"
@@ -39,3 +39,4 @@ color brightblue "'([^\\']|\\([\\abceflnprtv'"]|[0-9]+)|\\x([0-9]|[a-f]){2}|\\u(
 #Strings
 color brightcyan ""([^\\"]|\\([\\abceflnprtv'"]|[0-9]+)|\\x([0-9]|[a-f]){2}|\\u([0-9]|[a-f]){4}|\\u\{([0-9]|[a-f])+\})*""
 color brightcyan start=""""" end="""""
+
