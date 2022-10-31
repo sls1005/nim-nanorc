@@ -1,43 +1,43 @@
-#Syntax highlighting for Nim and NimScript
+# Syntax highlighting for Nim and NimScript
 
 syntax nim "\.nims?$"
 comment "#"
 
-#Keywords
+# Keywords
 icolor brightmagenta "\<(if|elif|else|when|case|of|for|while|break|continue|do|import|from|export|include|as|block|discard|try|except|finally|raise|yield|return|defer|using|asm)\>"
 icolor brightmagenta "\<(and|or|not|xor|div|mod|in|notin|is|isnot|shl|shr|static|cast|addr)\>"
 icolor brightmagenta "\<(proc|func|method|iterator|converter|macro|template|let|var|const|bind|mixin|type|enum|tuple|ref|ptr|object|distinct|concept)\>"
 icolor brightcyan "\<nil\>"
 
-#Words reserved
+# Words reserved
 icolor brightmagenta "\<(out|namespace|interface|end)\>"
 
-#System-provided types
+# System-provided types
 icolor cyan "\<(u?int(8|16|32|64)?|float(32|64)?)\>"
 icolor cyan "\<c((u?(short|int|(long)?long))|(float|(long)?double|string(Array)?|s?char|size_t))\>"
 icolor cyan "\<(seq|string|char|set|bool|byte|array|openArray|void|pointer|varargs)\>"
 icolor cyan "\<(auto|typed|untyped|typedesc|lent|owned|sink|range)\>"
 
-#Literals
+# Literals
 icolor brightcyan "\<(true|false)\>"
 color brightgreen "\>'((i|u)(8|16|32|64)|f(32|64))\>"
 
-#Special
+# Special
 icolor green "\<result\>"
 
-#Pragma
+# Pragma
 color blue start="\{\." end="\.?\}"
 
-#Comments
+# Comments
 color brightblue "#.*"
 color brightblue start="#\[" end="\]#"
 color brightblue start="##\[" end="\]##"
 
-#Characters
+# Characters
 color brightblue "'([^\\']|\\([\\abceflnprtv'"]|[0-9]+)|\\x([0-9]|[a-f]){2}|\\u([0-9]|[a-f]){4}|\\u\{([0-9]|[a-f])+\})'"
 
-#Strings
+# Strings
 color brightcyan ""([^\\"]|\\([\\abceflnprtv'"]|[0-9]+)|\\x([0-9]|[a-f]){2}|\\u([0-9]|[a-f]){4}|\\u\{([0-9]|[a-f])+\})*""
 color brightcyan "\>"[^"]*""
-  # raw string
+#  raw string
 color brightcyan start=""""" end="""""
