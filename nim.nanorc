@@ -39,5 +39,6 @@ color brightblue "'([^\\']|\\([\\abceflnprtv'"]|[0-9]+)|\\x([0-9]|[a-f]){2}|\\u(
 # Strings
 color brightcyan ""([^\\"]|\\([\\abceflnprtv'"]|[0-9]+)|\\x([0-9]|[a-f]){2}|\\u([0-9]|[a-f]){4}|\\u\{([0-9]|[a-f])+\})*""
 color brightcyan "\>"[^"]*""
-#  raw string
+#                         ^ raw string
 color brightcyan start=""""" end="""""
+
