@@ -34,7 +34,7 @@ color brightblue start="#\[" end="\]#"
 color brightblue start="##\[" end="\]##"
 
 # Characters
-color brightblue "'([^\\']|\\([\\abceflnprtv'"]|[0-9]+)|\\x([0-9]|[a-f]){2}|\\u([0-9]|[a-f]){4}|\\u\{([0-9]|[a-f])+\})'"
+color brightblue "'([^\\']|\\([\\abceflnprtv'"]|[0-9]+)|\\x([0-9]|[a-f]){2})'"
 
 # Strings
 color brightcyan "(("([^\\"]|\\([\\abceflnprtv'"]|[0-9]+)|\\x([0-9]|[a-f]){2}|\\u([0-9]|[a-f]){4}|\\u\{([0-9]|[a-f])+\})*)|\>"[^"]*)""
