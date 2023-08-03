@@ -19,14 +19,33 @@ icolor cyan "\<(seq|string|char|set|bool|byte|array|openArray|void|pointer|varar
 icolor cyan "\<(auto|typed|untyped|typedesc|lent|owned|sink|range)\>"
 
 # Literals
-icolor brightcyan "\<(true|false)\>"
-color brightgreen "\>'((i|u)(8|16|32|64)|f(32|64))\>"
+icolor brightgreen "\>'((i|u)(8|16|32|64)|f(32|64))\>"
 
 # Special
-icolor green "\<result\>"
+# Using the strictest highlighting rule.
+# result
+color green "\<r_?(E|e)_?(S|s)_?(U|u)_?(L|l)_?(T|t)\>"
+# underscore
+color brightblue "\<_\>"
 
-# Pragma
+# Pragmas
 color blue start="\{\." end="\.\}"
+
+# Constants
+# Only the most important ones are highlighted.
+# Using the strictest highlighting rule.
+# true
+color brightcyan "\<t_?(R|r)_?(U|u)_?(E|e)\>"
+# false
+color brightcyan "\<f_?(A|a)_?(L|l)_?(S|s)_?(E|e)\>"
+# on
+color brightcyan "\<o_?(N|n)\>"
+# off
+color brightcyan "\<o_?(F|f)_?(F|f)\>"
+# isMainModule
+color brightcyan "\<i_?(S|s)_?(M|m)_?(A|a)_?(I|i)_?(N|n)_?(M|m)_?(O|o)_?(D|d)_?(U|u)_?(L|l)_?(E|e)\>"
+# nimvm
+color brightcyan "\<n_?(I|i)_?(M|m)_?(V|v)_?(M|m)\>"
 
 # Comments
 color brightblue "#.*"
