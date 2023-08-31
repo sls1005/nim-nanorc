@@ -21,11 +21,11 @@ icolor cyan "\<(auto|typed|untyped|typedesc|lent|owned|sink|range)\>"
 # Literals
 icolor brightgreen "\>'((i|u)(8|16|32|64)|f(32|64))\>"
 
-# Special
+# Specials
 # Using the strictest highlighting rule.
-# result
+# 'result' (a special name)
 color green "\<r_?(E|e)_?(S|s)_?(U|u)_?(L|l)_?(T|t)\>"
-# underscore
+# '_' (underscore, a special variable name that's documented since compiler version 2.0.0)
 color brightblue "\<_\>"
 
 # Pragmas
@@ -34,17 +34,17 @@ color blue start="\{\." end="\.\}"
 # Constants
 # Only the most important ones are highlighted.
 # Using the strictest highlighting rule.
-# true
+# 'true'
 color brightcyan "\<t_?(R|r)_?(U|u)_?(E|e)\>"
-# false
+# 'false'
 color brightcyan "\<f_?(A|a)_?(L|l)_?(S|s)_?(E|e)\>"
-# on
+# 'on'
 color brightcyan "\<o_?(N|n)\>"
-# off
+# 'off'
 color brightcyan "\<o_?(F|f)_?(F|f)\>"
-# isMainModule
+# 'isMainModule'
 color brightcyan "\<i_?(S|s)_?(M|m)_?(A|a)_?(I|i)_?(N|n)_?(M|m)_?(O|o)_?(D|d)_?(U|u)_?(L|l)_?(E|e)\>"
-# nimvm
+# 'nimvm'
 color brightcyan "\<n_?(I|i)_?(M|m)_?(V|v)_?(M|m)\>"
 
 # Comments
