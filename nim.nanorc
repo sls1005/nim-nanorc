@@ -40,10 +40,10 @@ color brightblue start="#\[" end="\]#"
 color brightblue start="##\[" end="\]##"
 
 # Characters
-color brightblue "'([^\\']|\\([\\abceflnprtv'"]|[0-9]+)|\\x([0-9]|[A-Fa-f]){2})'"
+color brightblue "'([^\\']|\\([\\abceflnrtv'"]|[0-9]+)|\\x([0-9]|[A-Fa-f]){2})'"
 
 # Strings
-color brightcyan "(("([^\\"]|\\([\\abceflnprtv'"]|[0-9]+)|\\x([0-9]|[A-Fa-f]){2}|\\u([0-9]|[A-Fa-f]){4}|\\u\{([0-9]|[A-Fa-f])+\})*)|\>"[^"]*)""
-#                                                                                                                                     ^ raw string
-color brightcyan start=""""" end="""""
+color brightcyan "(\B"([^\\"]|\\([\\abceflnprtv'"]|[0-9]+)|\\x([0-9]|[A-Fa-f]){2}|\\u([0-9]|[A-Fa-f]){4}|\\u\{([0-9]|[A-Fa-f])+\})*|(r|\>)"[^"]*)""
+#                                                                                                                                         ^ raw string
+color brightcyan start="r?"""" end="""""
 
