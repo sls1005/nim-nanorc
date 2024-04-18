@@ -18,10 +18,13 @@ icolor cyan "\<c((u?(short|int|(long)?long))|(float|(long)?double|string(Array)?
 icolor cyan "\<(seq|string|char|set|bool|byte|array|openArray|void|pointer|varargs)\>"
 icolor cyan "\<(auto|typed|untyped|typedesc|lent|owned|sink|range)\>"
 
+#    Deprecated
+icolor cyan "\<cuchar\>"
+
 # Literals
 color brightgreen "\>'([IUiu](8|16|32|64)|[Ff](32|64))\>"
 
-# Specials
+# Special
 # 'result' (a special name)
 color green "\<result\>"
 # '_' (underscore, a special variable name that's documented since compiler version 2.0.0)
